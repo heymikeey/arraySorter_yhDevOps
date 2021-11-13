@@ -1,12 +1,18 @@
 public class Sorter {
-    // create method for sorting unsorted list
-    // return sorted list
-    // int[] alist = {76, 11, -11, 2, 16, -21, 7, 88};
-    // comment for commit test /git /github .INGORE
-    public static int[] sort(int[] unsorted) {
-        
 
-        return sorted;
+    public static int[] sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                int low = 0;
+                if (array[i] > array[j]) {
+                   low = array[i];
+                   array[i] = array[j];
+                   array[j] = low;
+                } 
+            }
+            
+        }
+        return array;
 
         
     }
