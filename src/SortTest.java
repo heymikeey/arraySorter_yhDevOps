@@ -5,27 +5,27 @@ public class SortTest {
     // säkerställa att er sorteringsalgoritm fungerar för alla möjliga listor av tal
    
     private int[] typeConverter(String[] args) {
-        int[] ara = Arrays.stream(args).mapToInt(Integer::parseInt).toArray();
-        runTest(ara);
+        return Arrays.stream(args).mapToInt(Integer::parseInt).toArray();
     }
+
     // 
     private void runTest(String[] example) {
-
+        int[] toSort = typeConverter(example);
+        int[] sorted = Sorter.sort(toSort);
+        System.out.print(Arrays.toString(sorted));
 
     
     }
     
     public static void main(String[] args) {
-        String[] arr1 = {"76", "11", "-55", "2", "16", "-21", "7", "88"};
+        String[] array1 = {"76", "11", "-55", "2", "16", "-21", "7", "88"};
+
         String[] arrTest2 = {"144", "34", "68", "0", "1", "919", "399", "8"};
         String[] arrTest3 = {"-13", "-99", "-34", "-512", "-1", "-131"};
         String[] arrTest4 = {"120.0", "411.0", "0.0", "-3.0", "10", "44"};
         String[] arrTest5 = {"true", "false", "true", "false", "true", "false"};
         
-
-
-        //SortTest t1 = new SortTest();
-        //t1.test(arr1);
+        test1.runTest(arr1);
 
     }
     
