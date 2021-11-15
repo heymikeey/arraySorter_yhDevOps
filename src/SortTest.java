@@ -19,13 +19,19 @@ public class SortTest {
     
     public static void main(String[] args) {
         String[] array1 = {"76", "11", "-55", "2", "16", "-21", "7", "88"};
+        int[] array1_expected = {-55, -21, 2, 7, 11, 16, 76, 88};
 
-        String[] arrTest2 = {"144", "34", "68", "0", "1", "919", "399", "8"};
-        String[] arrTest3 = {"-13", "-99", "-34", "-512", "-1", "-131"};
-        String[] arrTest4 = {"120.0", "411.0", "0.0", "-3.0", "10", "44"};
-        String[] arrTest5 = {"true", "false", "true", "false", "true", "false"};
+        String[] array2 = {"144", "34", "68", "0", "1", "919", "399", "8"};
+        String[] array3 = {"-13", "-99", "-34", "-512", "-1", "-131"};
+
         
-        test1.runTest(arr1);
+        SortTest array1_test = new SortTest();
+        SortTest array2_test = new SortTest();
+        SortTest array3_test = new SortTest();
+        SortTest array4_test = new SortTest();
+        SortTest array5_test = new SortTest();
+
+        array1_test.runTest(array1);
 
     }
     
