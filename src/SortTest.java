@@ -6,12 +6,15 @@ public class SortTest {
     String[] mixed;
     String[] duplicates;
     String[] single;
+    String[] empty;
     
     int[] positivesSorted;
     int[] negativesSorted;
     int[] mixedSorted;
     int[] duplicatesSorted;
     int[] singleSorted;
+    int[] emptySorted;
+
     
     public SortTest() {
         this.positives = new String[] {"144", "34", "68", "0", "1", "919", "399", "8"};
@@ -28,6 +31,10 @@ public class SortTest {
         
         this.single = new String[] {"9"};
         this.singleSorted = new int[] {9};
+        
+        this.empty = new String[] {};
+        this.emptySorted = new int[] {};
+
     }
    
     private static int[] typeConverter(String[] args) {
@@ -65,6 +72,8 @@ public class SortTest {
         SortTest.runTest(test.mixed, Arrays.toString(test.mixedSorted));
         SortTest.runTest(test.duplicates, Arrays.toString(test.duplicatesSorted));
         SortTest.runTest(test.single, Arrays.toString(test.singleSorted));
+        SortTest.runTest(test.empty, Arrays.toString(test.emptySorted));
+
 
     }
     
