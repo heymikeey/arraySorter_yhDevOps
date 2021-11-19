@@ -5,7 +5,7 @@ Program files: SortMain.java, Sorter.java, SortTest.java
 
 How to run:
 - Clone the repo locally with "git clone https://github.com/heymikeey/arraySorter_yhDevOps/" in the terminal (The repo is cloned into the current directory)
-- Enter the "src" folder via the terminal
+- Enter the "src" folder in the project via the terminal
 - Compile the program with the command "javac SortMain.java"
 - Run the program with the command "java SortMain" followed by the integers to be sorted, space seperated. Example: "java Sortmain 3 2 4 1"
 - Output will be "1 2 3 4"  
