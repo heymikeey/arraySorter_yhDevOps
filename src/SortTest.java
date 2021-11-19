@@ -41,7 +41,7 @@ public class SortTest {
         return Arrays.stream(args).mapToInt(Integer::parseInt).toArray();
     }
 
-    // 
+     
     private static void runTest(String[] example, String expected) {
         int[] toSort = typeConverter(example);
         String sorted = Arrays.toString(Sorter.sort(toSort));
